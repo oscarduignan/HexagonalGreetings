@@ -4,10 +4,10 @@ import io.cucumber.java.Before;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import hexagonalgreetings.PaymentFacadeApplication;
+import hexagonalgreetings.Application;
 import hexagonalgreetings.RandomGreeter;
 
-@SpringBootTest(classes = {PaymentFacadeApplication.class})
+@SpringBootTest(classes = {Application.class})
 @AutoConfigureMockMvc
 @MockBean(RandomGreeter.class) // this has to be here?
 public class CucumberContextConfiguration {
