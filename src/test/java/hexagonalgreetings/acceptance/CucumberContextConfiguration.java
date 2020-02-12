@@ -1,11 +1,11 @@
 package hexagonalgreetings.acceptance;
 
+import hexagonalgreetings.Application;
+import hexagonalgreetings.application.ports.out.RandomGreeter;
 import io.cucumber.java.Before;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import hexagonalgreetings.Application;
-import hexagonalgreetings.RandomGreeter;
 
 @SpringBootTest(classes = {Application.class})
 @AutoConfigureMockMvc
